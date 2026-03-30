@@ -55,6 +55,14 @@ import ptr3 from "@/assets/portrait-3.png";
 import ptr4 from "@/assets/portrait-4.png";
 import ptr5 from "@/assets/portrait-5.png";
 import ptr6 from "@/assets/portrait-6.png";
+import ptr7 from "@/assets/portrait-7.png";
+import ptr8 from "@/assets/portrait-8.png";
+import ptr9 from "@/assets/portrait-9.png";
+import ptr10 from "@/assets/portrait-10.png";
+import ptr11 from "@/assets/portrait-11.png";
+import ptr12 from "@/assets/portrait-12.png";
+import ptr13 from "@/assets/portrait-13.png";
+import ptr14 from "@/assets/portrait-14.png";
 
 const perspectiveGallery = [
   { img: p1, caption: "Two-point perspective — Study desk scene" },
@@ -115,6 +123,14 @@ const portraitGallery = [
   { img: ptr4, caption: "Girl portrait — Expressive pencil drawing" },
   { img: ptr5, caption: "Twin portraits — Detailed pencil study" },
   { img: ptr6, caption: "Camping sunset — Watercolor painting" },
+  { img: ptr7, caption: "Anime girl — Cheerful peace sign sketch" },
+  { img: ptr8, caption: "Girl portrait — Semi-realistic pencil drawing" },
+  { img: ptr9, caption: "Judy Hopps — Character profile sketch" },
+  { img: ptr10, caption: "Girl portrait — Expressive wavy hair drawing" },
+  { img: ptr11, caption: "Detailed portrait — Floral background pencil study" },
+  { img: ptr12, caption: "Twin portraits — Detailed pencil composition" },
+  { img: ptr13, caption: "Camping sunset — Watercolor landscape painting" },
+  { img: ptr14, caption: "Spider-Man — Dynamic ink and colour illustration" },
 ];
 
 interface Project {
