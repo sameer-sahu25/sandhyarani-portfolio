@@ -30,6 +30,12 @@ import wc4 from "@/assets/watercolour-4.jpg";
 import wc5 from "@/assets/watercolour-5.jpg";
 import wc6 from "@/assets/watercolour-6.jpg";
 import wc7 from "@/assets/watercolour-7.jpg";
+import wc8 from "@/assets/watercolour-8.jpg";
+import wc9 from "@/assets/watercolour-9.jpg";
+import wc10 from "@/assets/watercolour-10.jpg";
+import wc11 from "@/assets/watercolour-11.jpg";
+import wc12 from "@/assets/watercolour-12.jpg";
+import wc13 from "@/assets/watercolour-13.jpg";
 
 const perspectiveGallery = [
   { img: p1, caption: "Two-point perspective — Study desk scene" },
@@ -58,6 +64,12 @@ const watercolourGallery = [
   { img: wc5, caption: "Cherries — Pencil colour still life" },
   { img: wc6, caption: "Krishna — Acrylic portrait painting" },
   { img: wc7, caption: "Surreal eyes — Pencil colour illustration" },
+  { img: wc8, caption: "Innocent — Cute character sketch" },
+  { img: wc9, caption: "Character contrast — Body type study" },
+  { img: wc10, caption: "Funny uncle — Character with dialogue" },
+  { img: wc11, caption: "Girl on stool — Figure drawing" },
+  { img: wc12, caption: "Ballerina — Graceful pose sketch" },
+  { img: wc13, caption: "Ice cream dialogue — Comic characters" },
 ];
 
 interface Project {
