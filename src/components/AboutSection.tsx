@@ -9,8 +9,10 @@ const interests = [
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-24">
-      <div className="container max-w-4xl">
+    <section id="about" className="py-24 relative overflow-hidden">
+      <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-lavender/5 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="container max-w-4xl relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -22,7 +24,14 @@ const AboutSection = () => {
             Designing with <span className="text-gradient-pastel">Purpose</span>
           </h2>
 
-          <div className="glass-card p-8 sm:p-10 space-y-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            whileHover={{ borderColor: "hsl(270 50% 75% / 0.3)" }}
+            className="glass-card p-8 sm:p-10 space-y-6 transition-colors duration-500"
+          >
             <p className="text-muted-foreground leading-relaxed">
               Recently completed 12th grade and currently preparing for college. 
               Focused on building a strong design foundation and passionate about 
@@ -36,17 +45,22 @@ const AboutSection = () => {
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
-              {interests.map((item) => (
-                <div
+              {interests.map((item, i) => (
+                <motion.div
                   key={item.label}
-                  className="flex items-center gap-2 px-4 py-2 rounded-full bg-muted text-foreground text-sm"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.4 + i * 0.1 }}
+                  whileHover={{ scale: 1.08 }}
+                  className="flex items-center gap-2 px-4 py-2 rounded-full bg-muted text-foreground text-sm cursor-default"
                 >
                   <item.icon size={16} className="text-primary" />
                   {item.label}
-                </div>
+                </motion.div>
               ))}
             </div>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>
