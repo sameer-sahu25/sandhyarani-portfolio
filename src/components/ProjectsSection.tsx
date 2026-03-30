@@ -18,6 +18,11 @@ import p7 from "@/assets/perspective-7.jpg";
 import p8 from "@/assets/perspective-8.jpg";
 import p9 from "@/assets/perspective-9.jpg";
 
+import pd1 from "@/assets/product-1.jpg";
+import pd2 from "@/assets/product-2.jpg";
+import pd3 from "@/assets/product-3.jpg";
+import pd4 from "@/assets/product-4.jpg";
+
 const perspectiveGallery = [
   { img: p1, caption: "Two-point perspective — Study desk scene" },
   { img: p2, caption: "Kitchen interior — Perspective drawing" },
@@ -28,6 +33,13 @@ const perspectiveGallery = [
   { img: p7, caption: "Desk setup — Bird's eye perspective" },
   { img: p8, caption: "Dice study — 3D form exploration" },
   { img: p9, caption: "Kitchen interior — Worm's eye view" },
+];
+
+const productGallery = [
+  { img: pd1, caption: "Lighter — 3D form with shadow study" },
+  { img: pd2, caption: "Earbuds — Multi-angle product sketches" },
+  { img: pd3, caption: "Lighter — Closed form perspective" },
+  { img: pd4, caption: "Toothbrush — Product design exploration" },
 ];
 
 interface Project {
@@ -41,7 +53,7 @@ interface Project {
 const projects: Project[] = [
   { img: sketch1, title: "Perspective Design", category: "Design Practice", desc: "Watercolor exploration of geometric forms and structures", gallery: perspectiveGallery },
   { img: sketch2, title: "Creative Poster", category: "School Project", desc: "Hand-lettered poster with playful illustrations" },
-  { img: sketch3, title: "Product Design", category: "Design Practice", desc: "Visual brainstorming for real-world problem concepts" },
+  { img: pd1, title: "Product Design", category: "Design Practice", desc: "Visual brainstorming for real-world problem concepts", gallery: productGallery },
   { img: sketch4, title: "Water Colour & Pencil Colour Sketching", category: "Design Practice", desc: "Nature-inspired watercolor study with pastel tones" },
   { img: sketch5, title: "Cartoon Sketching", category: "Design Practice", desc: "Cute character illustrations with pencil and ink" },
   { img: sketch6, title: "Storyboards", category: "School Project", desc: "Sequential visual narratives for storytelling concepts" },
