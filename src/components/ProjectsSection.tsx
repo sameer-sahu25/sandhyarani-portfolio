@@ -49,6 +49,13 @@ import sb2 from "@/assets/storyboard-2.jpg";
 import sb3 from "@/assets/storyboard-3.jpg";
 import sb4 from "@/assets/storyboard-4.jpg";
 
+import ptr1 from "@/assets/portrait-1.png";
+import ptr2 from "@/assets/portrait-2.png";
+import ptr3 from "@/assets/portrait-3.png";
+import ptr4 from "@/assets/portrait-4.png";
+import ptr5 from "@/assets/portrait-5.png";
+import ptr6 from "@/assets/portrait-6.png";
+
 const perspectiveGallery = [
   { img: p1, caption: "Two-point perspective — Study desk scene" },
   { img: p2, caption: "Kitchen interior — Perspective drawing" },
