@@ -23,6 +23,14 @@ import pd2 from "@/assets/product-2.jpg";
 import pd3 from "@/assets/product-3.jpg";
 import pd4 from "@/assets/product-4.jpg";
 
+import wc1 from "@/assets/watercolour-1.jpg";
+import wc2 from "@/assets/watercolour-2.jpg";
+import wc3 from "@/assets/watercolour-3.jpg";
+import wc4 from "@/assets/watercolour-4.jpg";
+import wc5 from "@/assets/watercolour-5.jpg";
+import wc6 from "@/assets/watercolour-6.jpg";
+import wc7 from "@/assets/watercolour-7.jpg";
+
 const perspectiveGallery = [
   { img: p1, caption: "Two-point perspective — Study desk scene" },
   { img: p2, caption: "Kitchen interior — Perspective drawing" },
@@ -42,6 +50,16 @@ const productGallery = [
   { img: pd4, caption: "Toothbrush — Product design exploration" },
 ];
 
+const watercolourGallery = [
+  { img: wc1, caption: "Coffee shop — Ink illustration" },
+  { img: wc2, caption: "Mandala — Intricate ink pattern art" },
+  { img: wc3, caption: "Duck pond — Watercolor painting" },
+  { img: wc4, caption: "Mother & child — Acrylic canvas painting" },
+  { img: wc5, caption: "Cherries — Pencil colour still life" },
+  { img: wc6, caption: "Krishna — Acrylic portrait painting" },
+  { img: wc7, caption: "Surreal eyes — Pencil colour illustration" },
+];
+
 interface Project {
   img: string;
   title: string;
@@ -54,7 +72,7 @@ const projects: Project[] = [
   { img: sketch1, title: "Perspective Design", category: "Design Practice", desc: "Watercolor exploration of geometric forms and structures", gallery: perspectiveGallery },
   { img: sketch2, title: "Creative Poster", category: "School Project", desc: "Hand-lettered poster with playful illustrations" },
   { img: pd1, title: "Product Design", category: "Design Practice", desc: "Visual brainstorming for real-world problem concepts", gallery: productGallery },
-  { img: sketch4, title: "Water Colour & Pencil Colour Sketching", category: "Design Practice", desc: "Nature-inspired watercolor study with pastel tones" },
+  { img: wc3, title: "Water Colour & Pencil Colour Sketching", category: "Design Practice", desc: "Nature-inspired watercolor study with pastel tones", gallery: watercolourGallery },
   { img: sketch5, title: "Cartoon Sketching", category: "Design Practice", desc: "Cute character illustrations with pencil and ink" },
   { img: sketch6, title: "Storyboards", category: "School Project", desc: "Sequential visual narratives for storytelling concepts" },
 ];
