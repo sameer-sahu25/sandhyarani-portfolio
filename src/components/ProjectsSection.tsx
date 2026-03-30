@@ -100,6 +100,22 @@ const storyboardGallery = [
   { img: sb4, caption: "Potato chips recipe — Instructional storyboard" },
 ];
 
+import ptr1 from "@/assets/portrait-1.png";
+import ptr2 from "@/assets/portrait-2.png";
+import ptr3 from "@/assets/portrait-3.png";
+import ptr4 from "@/assets/portrait-4.png";
+import ptr5 from "@/assets/portrait-5.png";
+import ptr6 from "@/assets/portrait-6.png";
+
+const portraitGallery = [
+  { img: ptr1, caption: "Anime girl — Cheerful peace sign pose" },
+  { img: ptr2, caption: "Girl portrait — Semi-realistic style" },
+  { img: ptr3, caption: "Judy Hopps — Character study sketch" },
+  { img: ptr4, caption: "Girl portrait — Expressive pencil drawing" },
+  { img: ptr5, caption: "Twin portraits — Detailed pencil study" },
+  { img: ptr6, caption: "Camping sunset — Watercolor painting" },
+];
+
 interface Project {
   img: string;
   title: string;
@@ -115,6 +131,7 @@ const projects: Project[] = [
   { img: wc3, title: "Water Colour & Pencil Colour Sketching", category: "Design Practice", desc: "Nature-inspired watercolor study with pastel tones", gallery: watercolourGallery },
   { img: ct1, title: "Cartoon Sketching", category: "Design Practice", desc: "Cute character illustrations with pencil and ink", gallery: cartoonGallery },
   { img: sb2, title: "Storyboards", category: "School Project", desc: "Sequential visual narratives for storytelling concepts", gallery: storyboardGallery },
+  { img: ptr4, title: "Portraits", category: "Design Practice", desc: "Expressive character and figure portrait sketches", gallery: portraitGallery },
 ];
 
 const containerVariants = {
