@@ -127,7 +127,7 @@ interface Project {
 
 const projects: Project[] = [
   { img: sketch1, title: "Perspective Design", category: "Design Practice", desc: "Watercolor exploration of geometric forms and structures", gallery: perspectiveGallery },
-  { img: sketch2, title: "Portraits", category: "School Project", desc: "Hand-lettered poster with playful illustrations" },
+  { img: sketch2, title: "Creative Poster", category: "School Project", desc: "Hand-lettered poster with playful illustrations" },
   { img: pd1, title: "Product Design", category: "Design Practice", desc: "Visual brainstorming for real-world problem concepts", gallery: productGallery },
   { img: wc3, title: "Water Colour & Pencil Colour Sketching", category: "Design Practice", desc: "Nature-inspired watercolor study with pastel tones", gallery: watercolourGallery },
   { img: ct1, title: "Cartoon Sketching", category: "Design Practice", desc: "Cute character illustrations with pencil and ink", gallery: cartoonGallery },
