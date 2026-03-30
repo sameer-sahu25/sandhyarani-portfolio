@@ -37,6 +37,13 @@ import wc11 from "@/assets/watercolour-11.jpg";
 import wc12 from "@/assets/watercolour-12.jpg";
 import wc13 from "@/assets/watercolour-13.jpg";
 
+import ct1 from "@/assets/cartoon-1.jpg";
+import ct2 from "@/assets/cartoon-2.jpg";
+import ct3 from "@/assets/cartoon-3.jpg";
+import ct4 from "@/assets/cartoon-4.jpg";
+import ct5 from "@/assets/cartoon-5.jpg";
+import ct6 from "@/assets/cartoon-6.jpg";
+
 const perspectiveGallery = [
   { img: p1, caption: "Two-point perspective — Study desk scene" },
   { img: p2, caption: "Kitchen interior — Perspective drawing" },
@@ -72,6 +79,15 @@ const watercolourGallery = [
   { img: wc13, caption: "Ice cream dialogue — Comic characters" },
 ];
 
+const cartoonGallery = [
+  { img: ct1, caption: "Innocent — Cute chibi character" },
+  { img: ct2, caption: "Character contrast — Body type exploration" },
+  { img: ct3, caption: "Funny uncle — Character with dialogue" },
+  { img: ct4, caption: "Girl on stool — Seated figure sketch" },
+  { img: ct5, caption: "Ballerina — Graceful dance pose" },
+  { img: ct6, caption: "Ice cream dialogue — Comic scene" },
+];
+
 interface Project {
   img: string;
   title: string;
@@ -85,7 +101,7 @@ const projects: Project[] = [
   { img: sketch2, title: "Creative Poster", category: "School Project", desc: "Hand-lettered poster with playful illustrations" },
   { img: pd1, title: "Product Design", category: "Design Practice", desc: "Visual brainstorming for real-world problem concepts", gallery: productGallery },
   { img: wc3, title: "Water Colour & Pencil Colour Sketching", category: "Design Practice", desc: "Nature-inspired watercolor study with pastel tones", gallery: watercolourGallery },
-  { img: sketch5, title: "Cartoon Sketching", category: "Design Practice", desc: "Cute character illustrations with pencil and ink" },
+  { img: ct1, title: "Cartoon Sketching", category: "Design Practice", desc: "Cute character illustrations with pencil and ink", gallery: cartoonGallery },
   { img: sketch6, title: "Storyboards", category: "School Project", desc: "Sequential visual narratives for storytelling concepts" },
 ];
 
