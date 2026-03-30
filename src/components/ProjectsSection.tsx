@@ -93,6 +93,13 @@ const cartoonGallery = [
   { img: ct6, caption: "Ice cream dialogue — Comic scene" },
 ];
 
+const storyboardGallery = [
+  { img: sb1, caption: "Art supplies — Scene composition panels" },
+  { img: sb2, caption: "Strange glasses — Sequential narrative" },
+  { img: sb3, caption: "Water conservation — Visual storytelling" },
+  { img: sb4, caption: "Potato chips recipe — Instructional storyboard" },
+];
+
 interface Project {
   img: string;
   title: string;
@@ -107,7 +114,7 @@ const projects: Project[] = [
   { img: pd1, title: "Product Design", category: "Design Practice", desc: "Visual brainstorming for real-world problem concepts", gallery: productGallery },
   { img: wc3, title: "Water Colour & Pencil Colour Sketching", category: "Design Practice", desc: "Nature-inspired watercolor study with pastel tones", gallery: watercolourGallery },
   { img: ct1, title: "Cartoon Sketching", category: "Design Practice", desc: "Cute character illustrations with pencil and ink", gallery: cartoonGallery },
-  { img: sketch6, title: "Storyboards", category: "School Project", desc: "Sequential visual narratives for storytelling concepts" },
+  { img: sb2, title: "Storyboards", category: "School Project", desc: "Sequential visual narratives for storytelling concepts", gallery: storyboardGallery },
 ];
 
 const containerVariants = {
