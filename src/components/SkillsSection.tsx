@@ -8,10 +8,27 @@ const skills = [
   { icon: Palette, label: "Design Aesthetics", desc: "Color theory, composition & style", color: "text-lavender" },
 ];
 
+const containerVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.15 } },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 40, rotateX: 10 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    rotateX: 0,
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+  },
+};
+
 const SkillsSection = () => {
   return (
-    <section id="skills" className="py-24">
-      <div className="container max-w-5xl">
+    <section id="skills" className="py-24 relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-72 h-72 bg-peach/5 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="container max-w-5xl relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -25,22 +42,28 @@ const SkillsSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {skills.map((skill, i) => (
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+        >
+          {skills.map((skill) => (
             <motion.div
               key={skill.label}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
+              variants={cardVariants}
+              whileHover={{ y: -6, transition: { duration: 0.25 } }}
               className="glass-card p-6 group hover:glow-lavender transition-shadow duration-500"
             >
-              <skill.icon size={32} className={`${skill.color} mb-4 group-hover:scale-110 transition-transform`} />
+              <motion.div whileHover={{ rotate: 12, scale: 1.2 }} transition={{ type: "spring", stiffness: 300 }}>
+                <skill.icon size={32} className={`${skill.color} mb-4`} />
+              </motion.div>
               <h3 className="font-display text-lg font-semibold mb-1">{skill.label}</h3>
               <p className="text-sm text-muted-foreground">{skill.desc}</p>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
