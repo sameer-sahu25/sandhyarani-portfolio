@@ -5,7 +5,7 @@ import sketch3 from "@/assets/project-sketch-3.jpg";
 import sketch4 from "@/assets/project-sketch-4.jpg";
 
 const projects = [
-  { img: sketch1, title: "Architectural Study", category: "Design Practice", desc: "Watercolor exploration of geometric forms and structures" },
+  { img: sketch1, title: "Perspective Design", category: "Design Practice", desc: "Watercolor exploration of geometric forms and structures" },
   { img: sketch2, title: "Creative Poster", category: "School Project", desc: "Hand-lettered poster with playful illustrations" },
   { img: sketch3, title: "Problem Solving Map", category: "Design Practice", desc: "Visual brainstorming for real-world problem concepts" },
   { img: sketch4, title: "Botanical Illustration", category: "Design Practice", desc: "Nature-inspired watercolor study with pastel tones" },
