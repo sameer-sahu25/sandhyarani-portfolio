@@ -1,4 +1,4 @@
-# Sandhyaa B Portfolio Backend
+# sandhyaa-portfolio-backend
 
 A modern, scalable, and secure backend system for a design portfolio website.
 
@@ -12,7 +12,7 @@ A modern, scalable, and secure backend system for a design portfolio website.
 
 ## Project Structure
 ```
-/Backend
+/backend
 ├── /src
 │   ├── /config         # Database and app configurations
 │   ├── /controllers    # Logic for handling requests
